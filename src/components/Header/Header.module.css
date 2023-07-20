@@ -1,36 +1,48 @@
 .header {
   width: 100%;
+  padding: 1rem;
+  height: 150px;
+  background-color: #bbb;
   @media screen and (min-width: 768px) {
-    width: 300px;
-    background-color: #bbb;
     padding: 2rem;
+    width: 250px;
+    display: flex;
     position: relative;
     height: 100vh;
     /* position: fixed; */
-    display: flex;
     align-items: center;
   }
 }
 
 .menu {
-  width: 100%;
-  height: fit-content;
+  height: 100%;
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    height: fit-content;
+  }
 }
 
 .logo {
-  /* width: 300px; */
-  height: 300px;
-  border: 3px solid red;
+ 
   position: relative;
+  height: 70%;
 
   @media screen and (min-width: 768px) {
-    margin-bottom: 3rem;
-    width: auto;
-    height: 100px;
+    width: 100%;
+    /* because the image has objectFit = cover, it will never change its aspect ratio. Any extra space in the div will be empty. So as long as the height is set to any number greater than the image's maximum height it will be the desired size  */
+    height: 230px;
   }
 }
 
 .navLinks {
   list-style: none;
   text-align: center;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 1rem;
+  
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
+  }
 }

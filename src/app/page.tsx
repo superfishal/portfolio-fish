@@ -9,7 +9,7 @@ export default function Home() {
         border: "2px dashed purple",
       }}
     >
-      1000px
+      1000px to simulate content
     </div>
   );
 }
