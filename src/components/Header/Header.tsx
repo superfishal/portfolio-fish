@@ -7,13 +7,14 @@ function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.menu}>
-        <div className={styles.logo}>
+        menu
+        {/* <div className={styles.logo}>
           <Image fill src={logo} alt="cool logo" />
         </div>
         <ul className={styles.navLinks}>
           <li>link1</li>
           <li>link2</li>
-        </ul>
+        </ul> */}
       </div>
     </header>
   );
