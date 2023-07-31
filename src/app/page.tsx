@@ -6,9 +6,10 @@ export default function Home() {
     <div
       style={{
         height: "1000px",
+        border: "2px dashed purple",
       }}
     >
-      this is page.tsx
+      1000px to simulate content
     </div>
   );
 }

@@ -8,7 +8,14 @@ function Header() {
     <header className={styles.header}>
       <div className={styles.menu}>
         <div className={styles.logo}>
-          <Image fill src={logo} alt="cool logo" />
+          <Image
+            fill
+            src={logo}
+            alt="cool logo"
+            style={{
+              objectFit: "contain",
+            }}
+          />
         </div>
         <ul className={styles.navLinks}>
           <li>link1</li>

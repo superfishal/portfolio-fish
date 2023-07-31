@@ -18,11 +18,14 @@ body {
 }
 
 body {
-  /* display: flex; */
-  display: block;
-  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  border: 3px solid red;
+  overflow: hidden;
   @media screen and (min-width: 768px) {
-    display: flex;
+    min-height: 100vh;
+   flex-direction: row;
   }
 }
 
@@ -31,15 +34,21 @@ body {
   background-color: aquamarine;
   display: flex;
   flex-direction: column;
-  height: 100vh;
   overflow-y: auto;
+  
+  @media screen and (min-width: 768px) {
+    overflow-y: auto;
+    min-height: 100vh;
+    display: flex;
+  }
 }
 
 #children {
-  border: 2px dashed black;
+  
   flex: 1;
 }
 
 footer {
-  height: 150px;
+  background-color: blue;
+  padding: 2rem;
 }
